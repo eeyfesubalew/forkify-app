@@ -79,9 +79,6 @@ const controllAddRecipe = function (newRecipe) {
   model.uploadRecipe(newRecipe);
 };
 
-const newfeature = function () {
-  console.log('welcome to the new application');
-};
 const init = function () {
   bookmarksView.addHandlerRender(controllBookmarks);
   recipeView.addHandlerRender(controlRecipe);
@@ -90,6 +87,5 @@ const init = function () {
   searchView.addHandlerSearch(constrolSearchResults);
   paginationView.addHandler(controlPagination);
   addRecipeView._addHanderUpload(controllAddRecipe);
-  newfeature();
 };
 init();
